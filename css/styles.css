@@ -1,0 +1,22 @@
+/******CSS for Website Directory Index Page******/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: burlywood;
+}
+
+body{
+    max-width: 1400px;
+    height: 100%;
+    background-color: #ddd;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 1%;
+}
