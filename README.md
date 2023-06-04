@@ -7,7 +7,7 @@ Juce Website &amp; Info
 
 💡 Steps On How To Get Around Folders
 
-🏺 "Juce" Folder Has All Code For Elemental Play Website Inside.
+🏺 "Juce" Folder Has All Code For Juce Website Inside.
 
 ✔️ Signup For Github To Interact, Upload, Comment etc.. With Project
 
