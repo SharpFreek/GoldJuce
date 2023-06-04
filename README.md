@@ -3,7 +3,7 @@ Juce Website &amp; Info
 
 ⭐PLEASE READ BELOW FOR INSTRUCTIONS⭐
 
-👉🏽 Watch Site Live While Working 
+👉🏽 Watch Site Live While Working https://geoffstengel.github.io/Juce/
 
 💡 Steps On How To Get Around Folders
 
@@ -35,5 +35,5 @@ Juce Website &amp; Info
 
 💃 CSS Folder Holds Styling Sheets For Each Page
 
-💻 To Watch The Site Being Built 
+💻 To Watch The Site Being Built 👉🏽 https://geoffstengel.github.io/Juce/
 
