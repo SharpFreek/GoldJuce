@@ -13,8 +13,8 @@ Juce Website &amp; Info
 
 🛎️ Remember Upload Files & Folders Ya Gotta Be SIGNED IN 1st, Go To "Add file" In Folder
 
-📸 Any Images You Have For Your Project Please Upload Them In "images" Folder.
-👉🏽 1️: Add images go to "Add File" tab,  Viola'
+📸 Have Project Images Ready & Images You Have Please Upload em In "images" Folder.
+👉🏽 1️: To Add images go to "Add File" tab, in the Folder you want to ADD them to.
 👉🏽 2️: *please label files especially if its just random numbers lol*
 👉🏽 3️: For Logo If You Have SVG's *Scalable Vector Graphic* They're Always Good
 
@@ -27,13 +27,11 @@ Juce Website &amp; Info
 
 🏡 Home Page Is The "index.html" File
 
-🖼️ Gallery Page Is The "gallery.html" File
+💾 CSS Folder Holds Styling Sheets For Each Page
 
-✍️ Blog Page Is The "blog.html" File
+💾 JS Folder Is JavaScript Section
 
-🛒 Shop Page Is The "shop.html" File
-
-💃 CSS Folder Holds Styling Sheets For Each Page
+💃 Tests Folder is test, or things am testing
 
 💻 To Watch The Site Being Built 👉🏽 https://geoffstengel.github.io/Juce/
 
