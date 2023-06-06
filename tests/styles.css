@@ -1,0 +1,404 @@
+/******CSS for GoldJuce Directory Index Page******/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));}
+
+body{
+    max-width: 1300px;
+    height: 100%;
+    background-color: rgb(225, 131, 9);
+    margin: 0 auto;
+    padding: 0;
+}
+
+/****Main Grid Holds Majority Of Content****/
+.container{
+    display: grid;
+    max-width: 1200px;
+    height: 100%;
+    grid-template-columns: repeat(1, minmax(50px, auto));
+    grid-template-rows: 100px 20px auto auto auto 50px;
+  /**background-color: rgb(29, 131, 215);**/
+    grid-gap: 20px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 10px;
+   /** box-shadow: 0 0 10px black; **/
+
+}
+
+header{
+    display: grid;
+    width:100%;
+    height:105px;
+    grid-template-columns: repeat(1, minmax(30px, auto));
+    grid-template-rows: 25px 35px 45px;
+    /**background-color: aqua;**/
+    margin: 0 auto;
+    padding-top: 2px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 0 5px black;
+    align-items: center; 
+    justify-items: center;
+}
+
+.nav{
+    display: grid;
+    /**max-width: 600px;**/
+    width: 100%;
+    height: 40px;
+    grid-template-columns: repeat(4, minmax(50px, auto));
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    grid-row: 3;
+    gap: 5%;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav a{
+    font-size: 20px;
+    color: #ddd;
+    text-decoration: none;
+    text-align: center;
+    text-justify: center;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px #7dabd2;
+}
+/**
+a:active, p:active {
+    width: 76%;
+    height: 96%;
+}**/
+.nav a:active, .nav p:active {
+    width: 98%;
+    height: 96%;
+}
+
+/****labeled as box Tag on other pages possibly**/
+.nav-item{
+    height: 33px;
+    width: 33px;
+    border-radius: 10px;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+}
+
+.box0{background-image: url(/images/home-rickety.svg);}
+.box1{background-image: url(/images/house-W-leafs.svg);}
+.box2{background-image: url(/images/chat-icon.svg);}
+.box3{background-image: url(/images/cash_giving_icon.svg);}
+
+.box0, .box1, .box2, .box3{
+    border-style: solid;
+	border-width:2px;
+	border-color: #f101cd;
+}
+
+.nav-item:hover{
+    border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
+}
+
+h1{
+    font-size: 32px;
+    color:#ffffff;
+    text-shadow: 1px 1px 2px #7dabd2;
+    font-family:Roboto;
+    margin: 0 auto;
+    text-align: center;
+    
+    grid-row: 2;
+}
+
+.row1{
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: repeat(2, minmax(250px, auto));
+    background-color: #ddd;
+    margin:0 auto;
+    grid-row: 3;
+}
+
+
+/****Grid Holding All Section Cards*********/
+.content_grid{
+    display: grid;
+    width: 100%;
+	height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-auto-rows: 1fr;
+    column-gap: 4%;
+    row-gap: 50px;
+    margin: 0px auto;
+    justify-items: center;
+    align-content: center;
+	text-shadow: 1px 1px 2px #7dabd2;
+    grid-row: 4;   
+}
+
+/***Box is Holding Images*****/
+.box{
+	max-width: 300px;
+    max-width:90%;
+    height: 150px;
+    margin: 0 auto;
+    /**background-color: rgb(255, 0, 234);**/
+    margin: 0px auto;
+    border: solid;
+    border-color: #ddd;
+    border-width: 3px;
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	padding: 5px;
+    border-radius: 6px 6px 1px 1px;
+}
+/**
+.box:active{
+    width: 86%;
+    box-shadow: 0 0 5px rgb(9, 255, 0);
+   
+}**/
+
+/***Wraps around Items & Box images in Content Grid**/
+.item-wrap{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-rows: repeat(auto, minmax(80px, 150px));
+    margin: 0 auto;
+    /*** background-color: darkolivegreen; ****/
+    background-color: #ddd;
+    box-shadow: 0 0 10px rgb(169, 169, 169);
+    border-radius: 6px 6px 1px 1px;
+}
+ 
+/***Title For The Items in item-wrap Grid****/
+.item-title{
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    font-size: 18px;
+    grid-row: 1;
+    grid-column: 1/5;
+}
+
+/***Menu Under Images With Name, Link, Download Button*****/
+.item-menu{
+    display: grid;
+    width: 100%;
+    height: 70px;
+    font-size: 12px;
+    color: black;
+    grid-template-columns: repeat(3, minmax(30px, 80px));
+    grid-template-rows: 30px 20px;
+    grid-gap:3px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    text-justify: center;
+    background-color:#cfcece;
+    box-shadow: 0 0 10px rgb(143, 142, 142);
+    border-radius: 1px 1px 6px 6px;  
+}
+
+/*****Button Styling STARTS*************/
+.button a{
+    text-align: center;
+    text-justify: center;
+    margin: 0 auto;
+}
+
+.button{
+    width: 100%;
+    margin: 0 auto;
+    /**background: teal;**/
+    color: #ffffff;
+    /**border: none;**/
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 20px;
+    text-align: center;
+}
+.item-menu a, .item-menu p{
+ margin: 0 auto;
+}
+
+.item-menu a:active, .item-menu p:active {
+    width: 70%;
+    height: 96%;
+}
+ 
+.btn-html, .btn-css, .btn-JS{
+    box-shadow: 1px 1px 2px #7dabd2;
+}
+
+.btn-html, .btn-css, .btn-JS, .btn-taco{
+    grid-row: 2;
+    width: 40px;
+    height: 20px;
+   /** text-shadow: 1px 1px 2px #f200fa;**/
+}
+
+/***Style Buttons That Say HTML in item-menu Grid***/
+.btn-html{
+    background: teal;
+}
+
+/***Style Buttons That Say CSS in item-menu Grid***/
+.btn-css{
+    background: black;
+}
+.btn-JS{
+    background: rgb(187, 8, 97);
+}
+.btn-taco{
+    font-size: 18px;
+    margin: 0 auto;
+    align-self: center;
+    padding: 0; 
+    text-shadow: 1px 1px 2px #67737e;
+}
+.btn-taco a{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.button a{
+    text-align: center;
+    text-justify: center;
+    margin: 0;
+}
+
+#connect-button{
+    width: 25px;
+    height: 25px;
+    /**background:url('../images/metamask_icon_150x150.png') no-repeat;**/
+    margin: 0 auto;
+    border-radius:3px;
+    background-position: center;
+	background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: orangered;
+    border-color: #ddd;
+    border:3px;
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+    box-shadow: 1px 1px 2px #262e36;
+    grid-row:1;
+}
+
+.metamask-logo{
+    width: 14px;
+    height: 14px;
+    margin: 0 auto;
+    align-content: center; 
+    border-radius: 15px;
+    /**box-shadow: 1px 1px 2px #262e36;**/
+}
+
+/*****Button Styling END*************/
+
+/**Footer Section At Bottom Of Page***/
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: #b8b7b7;
+    color: #dddddd;
+    text-align: center;
+    margin:0 auto;
+    text-decoration: none;
+}
+ 
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+.footer:active{
+	height: 96%;
+	width: 96%;
+}
+
+
+.footer p, .footer{
+    border-radius: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.footer p{
+    border-style: solid;
+    border-color: rgb(243, 178, 0);
+}
+
+a{
+    text-decoration: none;  
+}
+
+.footer p, .footer a{
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    text-justify: center;
+    font-family:'Courier New', Courier, monospace ;
+    text-shadow: 1px 1px 2px #7dabd2;  
+    color: rgb(243, 178, 0);
+    padding:5px;
+    background: rgb(0, 0, 0);
+    box-shadow: 1px 1px 2px #262e36;
+    text-shadow: 1px 1px 2px #67737e;
+}
+
+/*******Images For Item Cards START********/
+/**640x360**Image Sizes****/
+/***AboutPage Layouts Images Section START***/
+.about1{background-image: url(../images/about_01_thum.png);}
+.about2{background-image: url(../images/about_02_thum.png);}
+.about3{background-image: url(../images/about_03_thum.png);}
+.about4{background-image: url(../images/about_04_thum.png);}
+.about5{background-image: url(../images/about_05_thum.png);}
+.about6{background-image: url(../images/about_06_thum.png);}
+.about7{background-image: url(../images/about_07_thum.png);}
+/***AboutPage Layouts Images Section END***/
+
+
+/***Background Images For Website pages Section START***/
+.bkgd_01{background-image: url(../images/page_bkgd_01_thum.png);}
+/***Background Images For Website pages Section END***/
+
+/*******Images For Item Cards END********/
+
+@media screen and (max-width: 350px) {
+h1{
+    font-size: 18px;
+}
+
+}
