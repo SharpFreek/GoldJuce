@@ -1,4 +1,4 @@
-/****CSS 08 Landing Page*******/
+/****CSS Claim Landing Page *******/
 
 body {
     margin: 0;
@@ -17,6 +17,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #1F1D2B;
+    box-shadow: 1px 1px 10px #f6ad02;
   }
   .landingpage::before {
     content: "";
