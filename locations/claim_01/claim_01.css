@@ -1,4 +1,4 @@
-/******CSS for GoldJuce Directory Index Page******/
+/******CSS for GoldJuce Individual Claims Pages******/
 * {
 	margin: 0;
 	padding: 0;
@@ -19,6 +19,7 @@ body{
     padding: 0;
 }
 
+/**Some Styling For Anchor Tags & Paragraph Tags***/
 p, a {
     height: 100%;
     margin: 0;
@@ -41,9 +42,9 @@ p, a {
     padding: 20px;
     padding-top: 10px;
    /** box-shadow: 0 0 10px black; **/
-
 }
 
+/***Top Grid Holding Nav & Logo******/
 header{
     display: grid;
     width:100%;
@@ -61,9 +62,9 @@ header{
     grid-row: 1; 
 }
 
+/***Nav Is Home Button etc.. Directory Tabs In Header***/
 .nav{
     display: grid;
-    /**max-width: 600px;**/
     width: 100%;
     height: 40px;
     grid-template-columns: repeat(2, minmax(50px, auto));
@@ -113,7 +114,7 @@ header{
 .box1{background-image: url(/images/house-W-leafs.svg);}
 
 /****Nav Button Individual Buttons******/
-.box0, .box1, .box2, .box3{
+.box0, .box1{
     border-style: solid;
 	border-width:2px;
 	border-color: #f101cd;
@@ -161,6 +162,7 @@ h1{
     justify-content: center;
 }
 
+/**Adjusts Individual Boxes Inside Row1 Grid***/
 .row{
     width:96%;
     height: 90%;
@@ -235,6 +237,10 @@ iframe{
 	background-repeat: no-repeat;	
 	padding: 5px;
     border-radius: 6px 6px 1px 1px;
+}
+
+.box0{
+    grid-row: 3;
 }
 
 /***Wraps around Items & Box images in Content Grid**/
@@ -351,8 +357,8 @@ iframe{
 }
 /***M%tamask Button START*******/
 #connect-button{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     /**background:url('/images/metamask_logo_02.png') no-repeat;**/
     margin: 0 auto;
     border-radius:3px;
@@ -360,24 +366,20 @@ iframe{
 	background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
- /**   background-color: orangered;
-    border-color: #ddd;
-    border:3px;
-    border-style: solid;
-	border-width:2px;
-	border-color: #3aad09;
-    box-shadow: 1px 1px 2px #262e36;***/
-    /**grid-row:1;**/
 }
 
-.metamask-logo{
-    width: 14px;
-    height: 14px;
+#metamask-logo{
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     align-content: center; 
     border-radius: 15px;
-    
-    /**box-shadow: 1px 1px 2px #262e36;**/
+}
+  /***Button For M&taMask***/
+button{
+    background: none;
+    grid-row: 3;
+    border: none;
 }
 /***M%tamask Button END*******/
 /*****Button Styling END*************/
