@@ -542,7 +542,21 @@ body {
   .filters .filterbtn svg {
     margin-right: 5px;
   }
+
+  .display:hover{
+    box-shadow: 0 0 5px #9B51E0;
+    box-shadow: 1px 1px 10px #f6ad02;
+  }
+  .display{
+    box-shadow: 0 0 5px #9B51E0;
+  }
+
+  .display-nft:active{
+    border-radius: 50%;
   
+  }
+
+  /***Media Query Starts***/
   @media screen and (max-width: 1500px) {
     .landingpage {
       max-width: 1200px;

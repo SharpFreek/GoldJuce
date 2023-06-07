@@ -49,7 +49,7 @@ header{
     width:100%;
     height:105px;
     grid-template-columns: repeat(1, minmax(30px, auto));
-    grid-template-rows: 25px 35px 45px;
+    grid-template-rows: auto 45px;
     /**background-color: aqua;**/
     margin: 0 auto;
     padding-top: 2px;
@@ -128,12 +128,17 @@ header{
 
 h1{
     font-size: 32px;
-    color:#ffffff;
-    text-shadow: 1px 1px 2px #7dabd2;
-    font-family:Poppins;
+   /** text-shadow: 1px 1px 2px #7dabd2;**/
+    background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0 auto;
     text-align: center;
     grid-row: 2;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: "Poppins";
+    font-style: bold;
 }
 
 #row1{
@@ -306,6 +311,7 @@ iframe{
  
 .btn-html, .btn-css, .btn-JS{
     box-shadow: 1px 1px 2px #7dabd2;
+    border-radius: 5px;
 }
 
 .btn-html, .btn-css, .btn-JS, .btn-taco{
