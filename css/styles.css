@@ -568,7 +568,7 @@ body {
     margin-top: -20px;
     border-radius: 20%;
     border: 1px solid grey;
-    transition: transform .7s ease;
+    transition: transform .6s ease;
     transform-origin: center center;
     pointer-events: none;
     z-index: 1000;
