@@ -26,6 +26,30 @@
         <a href="/index.html"><div class="nav-item box0 "></div><p></p></a>
     <!---    <a href="/shop.html"><div class="nav-item box1"></div><p></p></a> ---->
     </nav>
+    <!---Top M&tamask Button-START--->
+<button id="connect-button"> <!-- <p></p> --->
+    <img id="metamask-logo" src="/images/metamask_logo_02.png" alt="Metamask logo">
+    </button>
+    <script>
+        document.getElementById('connect-button').addEventListener('click', event => {
+            let account;
+            let button = event.target; 
+            ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                account = accounts[0];
+                console.log(account);
+                button.textContent = account;
+    
+                ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
+                    console.log(result);
+                    let wei = parseInt(result,16);
+                    let balance = wei / (10**18);
+                    console.log(balance + " ETH");  
+                });
+            });       
+        });        
+    </script>
+    <!---Top M&tamask Button-END--->
+  
 </header>
 <div id="row1">
     <div class="row mine-map">

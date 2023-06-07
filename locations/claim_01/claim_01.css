@@ -108,17 +108,18 @@ header{
    /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
 }
 
+/****Images For The Nav Buttons If Want To Use Icons****/
 .box0{background-image: url(/images/home-rickety.svg);}
 .box1{background-image: url(/images/house-W-leafs.svg);}
-.box2{background-image: url(/images/chat-icon.svg);}
-.box3{background-image: url(/images/cash_giving_icon.svg);}
 
+/****Nav Button Individual Buttons******/
 .box0, .box1, .box2, .box3{
     border-style: solid;
 	border-width:2px;
 	border-color: #f101cd;
 }
 
+/***Hover Over Nav Button Effects***/
 .nav-item:hover{
     border-style: solid;
 	background-color: hotpink;
@@ -126,6 +127,7 @@ header{
 	border-color: #DCF506;
 }
 
+/***Header Title Saying GoldJuce***/
 h1{
     float: left;
     font-size: 32px;
@@ -142,6 +144,7 @@ h1{
     font-style: bold;
 }
 
+/***Grid Holds Iframe Google Map & The Div Holding Text Next To It***/
 #row1{
     display: grid;
     max-width: 100%;
@@ -157,6 +160,7 @@ h1{
     border-radius: 3px;
     justify-content: center;
 }
+
 .row{
     width:96%;
     height: 90%;
@@ -232,12 +236,6 @@ iframe{
 	padding: 5px;
     border-radius: 6px 6px 1px 1px;
 }
-/**
-.box:active{
-    width: 86%;
-    box-shadow: 0 0 5px rgb(9, 255, 0);
-   
-}**/
 
 /***Wraps around Items & Box images in Content Grid**/
 .item-wrap{
@@ -362,14 +360,14 @@ iframe{
 	background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
-    background-color: orangered;
+ /**   background-color: orangered;
     border-color: #ddd;
     border:3px;
     border-style: solid;
 	border-width:2px;
 	border-color: #3aad09;
-    box-shadow: 1px 1px 2px #262e36;
-    grid-row:1;
+    box-shadow: 1px 1px 2px #262e36;***/
+    /**grid-row:1;**/
 }
 
 .metamask-logo{
@@ -378,14 +376,14 @@ iframe{
     margin: 0 auto;
     align-content: center; 
     border-radius: 15px;
+    
     /**box-shadow: 1px 1px 2px #262e36;**/
 }
 /***M%tamask Button END*******/
 /*****Button Styling END*************/
 
+
 /**Footer Section At Bottom Of Page***/
-
-
 .footer{
     width: 100%;
     height: 80px;
