@@ -559,6 +559,30 @@ body {
   
   }
 
+  .cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #16a085;
+    transition: transform .2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+.grow, .grow-small{
+    transform: scale(10);
+    background: #fff;
+    mix-blend-mode: difference;
+    border: none;
+}
+.grow-small{
+    transform: scale(2.5);
+}
+
   /***Media Query Starts***/
   @media screen and (max-width: 1500px) {
     .landingpage {
@@ -602,6 +626,8 @@ body {
       margin: 0;
     }
   }
+
+
   @media screen and (max-width: 925px) {
     .navlinkwrap {
       display: none;
