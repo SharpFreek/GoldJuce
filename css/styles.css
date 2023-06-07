@@ -3,6 +3,7 @@
 body {
     margin: 0;
     background-color: #252954;
+    cursor: none;
   }
   
   .hidden {
@@ -565,9 +566,9 @@ body {
     height: 40px;
     margin-left: -20px;
     margin-top: -20px;
-    border-radius: 50%;
-    border: 2px solid #16a085;
-    transition: transform .2s ease;
+    border-radius: 20%;
+    border: 1px solid grey;
+    transition: transform .7s ease;
     transform-origin: center center;
     pointer-events: none;
     z-index: 1000;
