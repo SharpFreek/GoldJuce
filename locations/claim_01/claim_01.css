@@ -127,6 +127,7 @@ header{
 }
 
 h1{
+    float: left;
     font-size: 32px;
    /** text-shadow: 1px 1px 2px #7dabd2;**/
     background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
@@ -354,7 +355,7 @@ iframe{
 #connect-button{
     width: 25px;
     height: 25px;
-    /**background:url('../images/metamask_icon_150x150.png') no-repeat;**/
+    /**background:url('/images/metamask_logo_02.png') no-repeat;**/
     margin: 0 auto;
     border-radius:3px;
     background-position: center;
