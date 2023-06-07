@@ -27,6 +27,10 @@ Juce Website &amp; Info
 
 🏡 Home Page Is The "index.html" File
 
+🗺️ Locations Folder Holds Individual GoldJuce Mine Claims Folders
+
+⛏️ Claim Folders is Inside "Location" Folder - Has All Individual Claims Seperated Into Folders
+
 💾 CSS Folder Holds Styling Sheets For Each Page
 
 💾 JS Folder Is JavaScript Section
