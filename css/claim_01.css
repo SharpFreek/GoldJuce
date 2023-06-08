@@ -9,7 +9,8 @@ html{
     max-height: 100%;
     margin: 0 auto;
     padding: 0;
-    background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    background-color: #252954;
+    cursor: none;
 }
 
 body{
@@ -19,7 +20,6 @@ body{
     margin: 0 auto;
     padding: 0;
     box-shadow: 0 0 5px rgb(243, 178, 0);
-    cursor: none;
 }
 
 /**Some Styling For Anchor Tags & Paragraph Tags***/
@@ -28,7 +28,6 @@ p, a {
     margin: 0;
     text-decoration: none;
 }
-      
 
 /****Main Grid Holds Majority Of Content****/
 .container{
@@ -37,7 +36,6 @@ p, a {
     max-height: 100%;
     grid-template-columns: repeat(1, minmax(50px, auto));
     grid-template-rows: 100px auto auto 60px;
-  /**background-color: rgb(29, 131, 215);**/
     grid-gap: 20px;
     margin: 0 auto;
     justify-items: center;
@@ -54,11 +52,8 @@ header{
     height:80px;
     grid-template-columns: repeat(1, minmax(30px, auto));
     grid-template-rows: 1fr;
-    /**background-color: aqua;**/
     margin: 0 auto;
-    background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
     border-radius: 8px 8px 0 0;
-    box-shadow: 0 0 5px black;
     align-items: center; 
     justify-items: center;
     grid-row: 1; 
@@ -69,12 +64,11 @@ header{
     display: grid;
     width: 100%;
     height: 70px;
-    grid-template-columns: repeat(3, minmax(50px, auto));
+    grid-template-columns: 80% 10% 10%;
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-    /**grid-row:1;**/
-    gap: 5%;
+    gap: 1px;
     justify-content: center;
     background-position: center;
     background-size: cover;
@@ -82,13 +76,7 @@ header{
 }
 
 .nav a{
-    font-size: 20px;
-    color: #ddd;
-    text-decoration: none;
-    text-align: center;
-    text-justify: center;
     margin: 0 auto;
-    text-shadow: 1px 1px 2px #7dabd2;
 }
 
 .nav a:active, .nav p:active {
@@ -112,15 +100,10 @@ header{
 }
 
 /****Images For The Nav Buttons If Want To Use Icons****/
-.box0{background-image: url(/images/home-icon-grey.svg);}
-/**.box1{background-image: url(/images/house-W-leafs.svg);}**/
-
-/****Nav Button Individual Buttons******/
-/**.box0, .box1{
-    border-style: solid;
-	border-width:2px;
-	border-color: #f101cd;
-}**/
+.box0{
+    background-image: url(../images/home-icon-grey.svg);
+    box-shadow: none;
+}
 
 /***Hover Over Nav Button Effects***/
 .nav-item:hover{
@@ -132,15 +115,12 @@ header{
 
 /***Header Title Saying GoldJuce***/
 h1{
-    float: left;
     font-size: 32px;
-   /** text-shadow: 1px 1px 2px #7dabd2;**/
     background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0 auto;
     text-align: center;
-   /** grid-row: 2;**/
     font-weight: 700;
     font-size: 42px;
     font-family: "Poppins";
@@ -154,6 +134,7 @@ h1{
     height: 500px;
     grid-template-columns: 1fr 325px;
     grid-template-rows: auto;
+    gap: 20px;
     margin:0 auto;
     text-align: center;
     text-justify: center;
@@ -165,14 +146,14 @@ h1{
 
 /**Adjusts Individual Boxes Inside Row1 Grid***/
 .row{
-    width:96%;
+    width:90%;
     height: 100%;
     margin:0 auto;
     box-sizing: 3px;
     border-style: solid;
 	border-width:2px;
 	border-color: rgb(243, 178, 0);
-    border-radius: 3px;
+    border-radius: 35px;
 }
 #row1 div{ 
     padding: 0;
@@ -184,6 +165,7 @@ iframe{
     height: 100%;
     margin: 0 auto;
     padding:0;
+    border-radius: 35px;
 }
 
 .claim_img{
@@ -191,14 +173,15 @@ iframe{
     height: 100%;
     margin: 0 auto;
     grid-row: 1;
+    border-radius: 35px 35px 0 0;
 }
 
 /**Row1 Div Banner Text Next To Main Image****/
 .img-description{
     display: grid;
-    max-width: 100%;
+    width: 96%;
     grid-template-rows: 60% 20% 20%;
-    font-family: Poppins;
+    font-family: "Poppins";
     text-align: center;
     text-justify: center;
     margin: 0 auto;
@@ -208,7 +191,7 @@ iframe{
 
 /****Row1 Banner Description Text**********/
 .img-description p{
-    height: 80%;
+    height: 100%;
     margin: 0 auto;
     align-items: center;
     padding: 10px 5% 0 5%;
@@ -217,6 +200,7 @@ iframe{
     grid-row: 2;
 }
 
+/***Adjust the Lat & Long Text For Plots Of Land *****/
 #latitude{
     width: 100%;
     height: 100%;
@@ -224,11 +208,9 @@ iframe{
     align-content: center;
     font-weight: bold;
     color: #1F1D2B;
-
     grid-row: 3;
 }
 #latitude a {
- 
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -241,7 +223,7 @@ iframe{
 .content_grid{
     display: grid;
     width: 100%;
-	height: 100%;
+	height: 300px;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     grid-auto-rows: 1fr;
     column-gap: 4%;
@@ -250,6 +232,7 @@ iframe{
     justify-items: center;
     align-content: center;
 	text-shadow: 1px 1px 2px #7dabd2;
+    margin-top: 5%;
     grid-row: 3;   
 }
 
@@ -257,7 +240,7 @@ iframe{
 /***Box is Holding Images**For 4 smaller Cards Towards Bottom***/
 .box{
 	max-width: 300px;
-    max-width:90%;
+    max-width: 90%;
     height: 150px;
     margin: 0 auto;
     margin: 0px auto;
@@ -279,7 +262,7 @@ iframe{
 .item-wrap{
     display: grid;
     width: 100%;
-    height: 100%;
+    height: 230px;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-template-rows: repeat(auto, minmax(80px, 150px));
     margin: 0 auto;
@@ -422,7 +405,6 @@ button{
     text-align: center;
     text-justify: center; 
     border-radius: 2px;
-    background: rgb(0, 0, 0);
     grid-row: 4;
     align-content: center;
     padding: 10px;
@@ -449,10 +431,11 @@ button{
     color: rgb(243, 178, 0);
     border-style: solid;
     border-color: rgb(243, 178, 0);
-    padding:5px;   
+    padding: 5px;   
 }
 
 .goldJuce-Btn a{
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
 }
@@ -507,6 +490,28 @@ button{
     transform: scale(2.5);
 }
 /***Mouse Animation END****/
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 60%;
+    top: 138px;
+    filter: blur(90px);
+    background-color: #FB37FF;
+  }
+  .container::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 80%;
+    top: 550px;
+    background-color: #18B2DE;
+    filter: blur(80px);
+  }
+
 
 @media screen and (max-width: 350px) {
 h1{
