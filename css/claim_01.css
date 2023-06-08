@@ -19,6 +19,7 @@ body{
     margin: 0 auto;
     padding: 0;
     box-shadow: 0 0 5px rgb(243, 178, 0);
+    cursor: none;
 }
 
 /**Some Styling For Anchor Tags & Paragraph Tags***/
@@ -169,7 +170,7 @@ h1{
     margin:0 auto;
     box-sizing: 3px;
     border-style: solid;
-	border-width:1px;
+	border-width:2px;
 	border-color: rgb(243, 178, 0);
     border-radius: 3px;
 }
@@ -480,6 +481,32 @@ button{
 /***Background Images For Website pages Section END***/
 
 /*******Images For Item Cards END********/
+
+/***Mouse Animation START****/
+.cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 20%;
+    border: 1px solid grey;
+    transition: transform .6s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+.grow, .grow-small{
+    transform: scale(10);
+    background: #fff;
+    mix-blend-mode: difference;
+    border: none;
+}
+.grow-small{
+    transform: scale(2.5);
+}
+/***Mouse Animation END****/
 
 @media screen and (max-width: 350px) {
 h1{

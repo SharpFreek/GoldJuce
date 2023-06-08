@@ -559,7 +559,7 @@ body {
     border-radius: 50%;
   
   }
-
+/***Mouse Animation START****/
   .cursor{
     position: fixed;
     width: 40px;
@@ -583,7 +583,7 @@ body {
 .grow-small{
     transform: scale(2.5);
 }
-
+/***Mouse Animation END****/
   /***Media Query Starts***/
   @media screen and (max-width: 1500px) {
     .landingpage {

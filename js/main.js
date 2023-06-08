@@ -1,3 +1,4 @@
+//Mouse Animation
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     mouseX = 0,
