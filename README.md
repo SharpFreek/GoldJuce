@@ -38,9 +38,11 @@ Juce Website &amp; Info
 💃 Tests Folder is test section, or things am testing
 
 🛎️Helpful Links For Setting Up Domain & Adding Images & Files👇
-    📷 Github How To Upload Images Vid .58 Seconds Long: https://www.youtube.com/watch?v=ATVm6ACERu8 
+    🎥 Github Basics: https://youtu.be/iv8rSLsi1xo & https://youtu.be/v_1iqtOnUMg
 
-    💻 DNS Point Godaddy Domain to Github Pages Tutorial: https://www.youtube.com/watch?v=dbgEWWBvIxY
+    📷 Github How To Upload Images .58 Seconds Long: https://www.youtube.com/watch?v=ATVm6ACERu8 
+
+    💻 DNS Point Godaddy Domain to Github Pages Tutorial: https://youtu.be/dbgEWWBvIxY
     
 🛎️
     👬🏽 Domain Important - at Section 5 You'll Need These Numbers in Godaddy Manage DNS: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain

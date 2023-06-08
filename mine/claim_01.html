@@ -18,18 +18,16 @@
 </head>
 <body>
 
-<!----<h1>GoldJuce</h1>--->
 <div class="container">
-<header>
-    <h1>Claim 01</h1>
+ <header>
+    
     <nav class="nav">
-        <a href="../index.html"><div class="nav-item box0 "></div><p></p></a>
-    <!---    <a href="/shop.html"><div class="nav-item box1"></div><p></p></a> ---->
-    </nav>
-    <!---Top M&tamask Button-START--->
-<button id="connect-button"> <!-- <p></p> --->
-    <img id="metamask-logo" type="image/svg" src="../images/metamask-logo-fox.svg" alt="Metamask logo">
-    </button>
+        <h1>Claim 01</h1>
+        <a href="../index.html"><div class="nav-item box0"></div></a>
+        <!---Top M&tamask Button-START--->
+        <button id="connect-button"> <!-- <p></p> --->
+        <img id="metamask-logo" type="image/svg" src="../images/metamask-logo-fox.svg" alt="Metamask logo">
+        </button>
     <script>
         document.getElementById('connect-button').addEventListener('click', event => {
             let account;
@@ -48,21 +46,23 @@
             });       
         });        
     </script>
+    </nav>
     <!---Top M&tamask Button-END--->
-  
-</header>
+ </header>
+
+<!----Content Section Starts Here----->
 <div id="row1">
     <div class="row mine-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d334594.3504933539!2d-120.75010652479429!3d39.62936447471451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1686081946456!5m2!1sen!2sus" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="row img-description">
+        <img class="claim_img" src="/images/gold-mine-01.jpg">
         <p>Tootsie roll carrot cake shortbread pudding halvah caramels.
-            Sesame snaps caramels cotton candy tart cake toffee. Shortbread danish icing
-            biscuit cheesecake bonbon jelly-o. Donut dessert pie cake jelly topping jujubes.
+            Sesame snaps.
         </p>
+        <div id="latitude"><a src="">39°42'13.1"N 121°09'34.2"W</a></div>
     </div>
-
 </div>
 
 <!---Grid Holding Individual Cards Start---->
@@ -110,10 +110,10 @@
 </div>
 <!---Grid Holding Individual Cards END---->
 
-<div class="footer">
-    <a href="/index.html"><div class="goldJuce-Btn">GoldJuce</div></a>
-</div> 
+    <div class="footer">
+        <a href="../index.html"><div class="goldJuce-Btn">GoldJuce</div></a>
+    </div> 
 </div>
-
+ 
 </body>   
 </html> 
