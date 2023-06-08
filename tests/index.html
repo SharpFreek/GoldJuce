@@ -7,91 +7,127 @@
     <meta name="keywords" content="juce, crypto, bitcoin, ethereum, eth, gold mining, minerals, games,
     metaverse, nft, manifold, erc20, erc721, erc1155, blockchain ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="reset" href="css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="reset" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/claim_01.css"/>
     <!--Your Google Analytics Will Go Between Here---Start--->
     <!--Your Google Analytics Will Go Between Here---END--->
     <!-----Thumbnail Image In Index---Start---------->
-    <link rel="shortcut icon" type="image/png" href="images/bitcoin_B_orange.svg">
+    <link rel="shortcut icon" type="image/svg" href="../images/bitcoin_B_orange.svg">
     <!-----Thumbnail Image In Index----Finish--------->
-    <title>⛏️ Test GoldJuce Website Test Claims Page</title>    
+    <title>⛏️ Test Page GoldJuce - 01 Mining Claim</title>    
 </head>
 <body>
-
-
-<!----<h1>Juce</h1>--->
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.1/dist/gsap.min.js"></script>
 <div class="container">
-<header>
-    <h1>GoldJuce</h1>
+ <header>
+    <div class="cursor"></div>
     <nav class="nav">
-        <a href="/index.html"><div class="nav-item box0 "></div><p></p></a>
-    <!---    <a href="/shop.html"><div class="nav-item box1"></div><p></p></a> ---->
+        <h1 class="cursor-scale small">Claim 01</h1>
+        <a class="nav-item box0" href="../index.html"></a>
+        <!---Top M&tamask Button-START--->
+        <button id="connect-button"> <!-- <p></p> --->
+        <img id="metamask-logo" type="image/svg" src="../images/metamask-logo-fox.svg" alt="Metamask logo">
+        </button>
+    <script>
+        document.getElementById('connect-button').addEventListener('click', event => {
+            let account;
+            let button = event.target; 
+            ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                account = accounts[0];
+                console.log(account);
+                button.textContent = account;
+    
+                ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
+                    console.log(result);
+                    let wei = parseInt(result,16);
+                    let balance = wei / (10**18);
+                    console.log(balance + " ETH");  
+                });
+            });       
+        });        
+    </script>
     </nav>
-</header>
-<div id="row1">
+    <!---Top M&tamask Button-END--->
+ </header>
+
+<!----Content Section Starts Here----->
+<!---Banner--START--->
+<div id="banner_1">
     <div class="row mine-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d334594.3504933539!2d-120.75010652479429!3d39.62936447471451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1686081946456!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d334594.3504933539!2d-120.75010652479429!3d39.62936447471451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1686081946456!5m2!1sen!2sus" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="row img-description">
-        <p>Tootsie roll carrot cake shortbread pudding halvah caramels.
-            Sesame snaps caramels cotton candy tart cake toffee. Shortbread danish icing
-            biscuit cheesecake bonbon jelly-o. Donut dessert pie cake jelly topping jujubes.
+        <img class="claim_img cursor-scale small" src="../images/gold-mine-01.jpg">
+        <p class="img-desc cursor-scale small">
+            Tootsie roll carrot cake shortbread.
         </p>
-    </div>
-
-</div>
-
-<!---Grid Holding Individual Cards Start---->
-<div class="content_grid">
-
-    <div class="item-wrap">
-        <a href=""><div class="box claim_02"></div></a>
-        <div class="item-menu">
-            <p class="item-title">Claim 01</p>
-            <a class="button btn-html" href="">map</a>
-            <a class="button btn-taco" href="">⛏️</a>
-            <a class="button btn-css" href="">tools</a>
+        <div id="latitude">
+            <a src="">39°42'13.1"N 121°09'34.2"W</a>
         </div>
     </div>
+</div>
+<!---Banner--END--->
 
+<!---Section Title--START--->
+<div id="section-title">
+    <h2>Palladium Claims!!</h2>
+</div>
+<!---Section Title--END--->
+
+<!---Grid Holding Smaller Individual Cards Start---->
+<div class="content_grid">
+    
     <div class="item-wrap">
-        <a href=""><div class="box claim_03"></div></a>
+        <a href=""><div class="box claim_02 cursor-scale small"></div></a>
         <div class="item-menu">
             <p class="item-title">Claim 02</p>
             <a class="button btn-html" href="">map</a>
-            <a class="button btn-taco" href="">⛏️</a>
+            <a class="button btn-taco cursor-scale small" href="">⛏️</a>
             <a class="button btn-css" href="">tools</a>
         </div>
     </div>
 
     <div class="item-wrap">
-        <a href=""><div class="box claim_04"></div></a>
+        <a href=""><div class="box claim_03 cursor-scale small"></div></a>
         <div class="item-menu">
             <p class="item-title">Claim 03</p>
             <a class="button btn-html" href="">map</a>
-            <a class="button btn-taco" href="">⛏️</a>
+            <a class="button btn-taco cursor-scale small" href="">⛏️</a>
             <a class="button btn-css" href="">tools</a>
         </div>
     </div>
 
     <div class="item-wrap">
-        <a href=""><div class="box claim_05"></div></a>
+        <a href=""><div class="box claim_04 cursor-scale small"></div></a>
+        <div class="item-menu">
+            <p class="item-title">Claim 03</p>
+            <a class="button btn-html" href="">map</a>
+            <a class="button btn-taco cursor-scale small" href="">⛏️</a>
+            <a class="button btn-css" href="">tools</a>
+        </div>
+    </div>
+
+    <div class="item-wrap">
+        <a href=""><div class="box claim_05 cursor-scale small"></div></a>
         <div class="item-menu">
             <p class="item-title">Claim 04</p>
             <a class="button btn-html" href="">map</a>
-            <a class="button btn-taco" href="">⛏️</a>
+            <a class="button btn-taco cursor-scale small" href="">⛏️</a>
             <a class="button btn-css" href="">tools</a>
         </div>
     </div>
 </div>
-<!---Grid Holding Individual Cards END---->
-
-<div class="footer">
-    <a href=""><div class="goldJuce-Btn">GoldJuce</div></a>
-</div> 
+<!---Grid Holding Smaller Individual Cards END---->
+<div class="footer2">
+    
+    <p class="cursor-scale small">Copyright 2023 GOLDJUCE</p>
+  </div>
+    <div class="footer">
+        <a href="../index.html"><div class="goldJuce-Btn">GoldJuce</div></a>
+    </div> 
 </div>
-
+<script src="../js/main.js"></script>
+ <script src="../js/gsap.js"></script>
 </body>   
 </html> 
