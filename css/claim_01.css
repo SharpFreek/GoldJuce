@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    max-width: 1200px;
+    max-width: 1400px;
     height: 100%;
     background-color: #1F1D2B;
     margin: 0 auto;
@@ -36,7 +36,7 @@ p, a {
     max-height: 100%;
     grid-template-columns: repeat(1, minmax(50px, auto));
     grid-template-rows: 100px auto auto 60px;
-    grid-gap: 20px;
+    grid-gap: 40px;
     margin: 0 auto;
     justify-items: center;
     align-items: center;
@@ -79,11 +79,6 @@ header{
     margin: 0 auto;
 }
 
-.nav a:active, .nav p:active {
-    width: 98%;
-    height: 96%;
-}
-
 /****labeled as box Tag on other pages possibly**/
 .nav-item{
     height: 30px;
@@ -99,12 +94,6 @@ header{
    /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
 }
 
-/****Images For The Nav Buttons If Want To Use Icons****/
-.box0{
-    background-image: url(../images/home-icon-grey.svg);
-    box-shadow: none;
-}
-
 /***Hover Over Nav Button Effects***/
 .nav-item:hover{
     border-style: solid;
@@ -115,6 +104,8 @@ header{
 
 /***Header Title Saying GoldJuce***/
 h1{
+    float: left;
+    position: absolute;
     font-size: 32px;
     background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
     -webkit-background-clip: text;
@@ -134,7 +125,7 @@ h1{
     height: 500px;
     grid-template-columns: 1fr 325px;
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 120px;
     margin:0 auto;
     text-align: center;
     text-justify: center;
@@ -152,8 +143,12 @@ h1{
     box-sizing: 3px;
     border-style: solid;
 	border-width:2px;
-	border-color: rgb(243, 178, 0);
-    border-radius: 35px;
+	/**border-color: rgb(243, 178, 0);**/
+    border: 1px solid;
+    border-radius: 35px; 
+    box-shadow: 0 0 5px #9B51E0;
+    /**animation-name: leftslide;
+    animation-duration: 0.8s;**/
 }
 #row1 div{ 
     padding: 0;
@@ -174,6 +169,10 @@ iframe{
     margin: 0 auto;
     grid-row: 1;
     border-radius: 35px 35px 0 0;
+}
+
+.mine-map{
+    height: 90%;
 }
 
 /**Row1 Div Banner Text Next To Main Image****/
@@ -237,6 +236,12 @@ iframe{
 }
 
 /***Row 2, 2nd Half of Page**Starts Here***/
+/****Images For The Nav Buttons If Want To Use Icons****/
+.box0{
+    background-image: url(../images/home-icon-grey.svg);
+    box-shadow: none;
+}
+
 /***Box is Holding Images**For 4 smaller Cards Towards Bottom***/
 .box{
 	max-width: 300px;
@@ -255,7 +260,19 @@ iframe{
 }
 
 .box0{
-    grid-row: 3;
+    margin: 0 auto;
+    grid-column: 2;
+}
+.box0 a, .nav-item a{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    grid-column: 2;
+}
+.box0:active {
+    width: 27px;
+    height: 27px;
+    background-color: rgb(1, 226, 1);
 }
 
 /***Wraps around Items & Box images in Content Grid**/
@@ -372,13 +389,13 @@ iframe{
 #connect-button{
     width: 30px;
     height: 30px;
-    /**background:url('/images/metamask_logo_02.png') no-repeat;**/
     margin: 0 auto;
     border-radius:3px;
     background-position: center;
 	background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+    grid-column: 3;
 }
 
 #metamask-logo{
@@ -408,6 +425,7 @@ button{
     grid-row: 4;
     align-content: center;
     padding: 10px;
+    border-top: 1px solid #F2F2F2;
 }
 
 .footer a{
@@ -419,12 +437,12 @@ button{
 .goldJuce-Btn{
     max-width: 120px;
     max-height: 30px;
-    margin: 0 auto;
     text-align: center;
     text-justify: center;
     font-family:'Courier New', Courier, monospace ;
     border-radius: 20px;
     font-size: 24px;
+    margin: 0 auto;
     background: rgb(0, 0, 0);
     box-shadow: 1px 1px 2px #262e36;
     text-shadow: 1px 1px 2px #67737e; 
@@ -449,13 +467,13 @@ button{
 /*******Images For Item Cards START********/
 /**640x360**Image Sizes****/
 /***AboutPage Layouts Images Section START***/
-.about1{background-image: url(../images/about_01_thum.png);}
-.about2{background-image: url(../images/about_02_thum.png);}
-.about3{background-image: url(../images/about_03_thum.png);}
-.about4{background-image: url(../images/about_04_thum.png);}
-.about5{background-image: url(../images/about_05_thum.png);}
-.about6{background-image: url(../images/about_06_thum.png);}
-.about7{background-image: url(../images/about_07_thum.png);}
+.claim_02{background-image: url(../images/gold-mine-02.jpg);}
+.claim_03{background-image: url(../images/gold-mine-03.jpg);}
+.claim_04{background-image: url(../images/gold-mine-04.jpg);}
+.claim_05{background-image: url(../images/gold-mine-05.jpg);}
+.claim_06{background-image: url(../images/gold-mine-06.jpg);}
+.claim_07{background-image: url(../images/gold-mine-07.jpg);}
+.claim_08{background-image: url(../images/gold-mine-08.jpg);}
 /***AboutPage Layouts Images Section END***/
 
 
