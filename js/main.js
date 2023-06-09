@@ -35,3 +35,19 @@ cursorScale.forEach(link => {
         }
     });
 });
+
+/***Copy Text Button Start***/ 
+const copy = document.querySelectorAll('#contract-address');
+
+copy.forEach( text => {
+    const button = text.querySelector('#copy')
+    const contract = text.querySelector('p')
+
+    button.addEventListener('click', () => {
+        navigator.clipboard.writeText(contract.textContent)
+        button.textContent = '✔️'
+        console.log('Testing Testing 1 2 3')
+    })
+})
+/***Copy Text Button END***/
+

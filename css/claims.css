@@ -22,7 +22,7 @@ body{
     box-shadow: 0 0 5px rgb(243, 178, 0);
 }
 
-/**Some Styling For Anchor Tags & Paragraph Tags***/
+/**Some Styling For Anchor Tags & Paragraph Tags***/ 
 p, a {
     height: 100%;
     margin: 0;
@@ -98,7 +98,7 @@ header{
     border-style: solid;
 	background-color: hotpink;
 	border-width:2px;
-	border-color: #DCF506;
+	border-color: #DCF506; 
 }
 
 /***Header Title Saying GoldJuce***/
@@ -542,6 +542,7 @@ button{
 /*******Images For Item Cards START********/
 /**640x360**Image Sizes****/
 /***AboutPage Layouts Images Section START***/
+.claim_01{background-image: url(../images/gold-mine-01.jpg);}
 .claim_02{background-image: url(../images/gold-mine-02.jpg);}
 .claim_03{background-image: url(../images/gold-mine-03.jpg);}
 .claim_04{background-image: url(../images/gold-mine-04.jpg);}
@@ -618,9 +619,31 @@ button{
 }
 
 @media screen and (max-width:712px) {
+/****Main Grid Holds Majority Of Content****/
+.container{
+    display: grid;
+    max-width: 1200px;
+    max-height: 100%;
+    grid-template-columns: repeat(1, minmax(50px, auto));
+    grid-template-rows: 50px auto 100px auto 60px;
+    grid-gap: 20px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 10px;
+}
+header{
+    height: 50px;
+}
+.nav{
+    height: 50px;
+}
+
 #banner_1{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 300px;
+    height: auto;
 }
     
 #banner_1{    
@@ -637,9 +660,9 @@ button{
 
 .img-description{
     width: 330px;
-    height: 450px;
+    height: 500px;
     margin: 0 auto;
-    border-radius: 35px 35px 0 0;
+    border-radius: 35px;
     grid-row: 1;
 }
 
@@ -656,9 +679,17 @@ button{
     filter: blur(80px);
   }
 }
+
+@media screen and (max-width: 420px) {
+.nav{
+    grid-template-columns: 60% 10% 20%;
+}
+}
 @media screen and (max-width: 350px) {
 h1{
     font-size: 18px;
 }
-
+.nav{
+    grid-template-columns: 60% 20% 20%;
+}
 }
