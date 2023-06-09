@@ -93,6 +93,14 @@ body {
     margin: 0 auto;
 }
 
+#metamask-svg:active{
+  width: 94%;
+  height: 94%;
+  border: 0 0 5px #9B51E0;
+ /** box-shadow: 1px 1px 10px #f6ad02;**/
+
+}
+
 #player_1{
   width: 20px;
   height: 20px;
@@ -467,7 +475,6 @@ body {
     font-size: 12px;
     line-height: 36px;
     color: #828282;
-    
   }
   
   .item {
