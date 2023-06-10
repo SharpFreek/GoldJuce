@@ -75,16 +75,31 @@ body {
 
   /****************************/
   /***M&tamask Button START***/
-  #connect-button{
-    max-width: 100%;
-    height: 30px;
-    margin: 0 auto;
-    background-position: center;
-	  background-size: cover;
-    background: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    cursor: pointer;
-    border: none;
+#connect-button{
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  background-position: center;
+	background-size: cover;
+  background: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #cee103;
+}
+#connect-button:active{
+  box-shadow: 1px 1px 10px #cee103;
+}
+
+#connect-button p{
+  font-size: 12px;
+  font-family: "Poppins";
+  margin: 0 auto;
+  color: #F2F2F2;
+  letter-spacing: .08rem;
+  padding: 0 5px 0 5px;
+  text-shadow: 1px 1px 2px #67737e;
 }
 
 #metamask-logo{
@@ -98,8 +113,6 @@ body {
   width: 94%;
   height: 94%;
   border: 0 0 5px #9B51E0;
- /** box-shadow: 1px 1px 10px #f6ad02;**/
-
 }
 
 #player_1{
@@ -599,17 +612,16 @@ body {
   grid-template-columns: 30px auto ;
   grid-template-rows: 40px;
   border-radius: 25px;
-  color: #F2F2F2;
-  text-decoration: none;
   margin: 0 auto;
+  color: #F2F2F2;
   border:3px solid #9B51E0;
   box-shadow: 0 0 5px #9B51E0;
   background-color:#1F1D2B;
+  text-decoration: none;
   letter-spacing: .1rem;
   overflow: hidden;
   align-content: center;
   padding-left: 4px;
-
 }
 
 #contract-address:hover{
@@ -699,8 +711,6 @@ body {
 }
 /***Grid holding Cards At Bottom******/
 
-
-
 .l-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -709,7 +719,7 @@ body {
   max-width: 1200px;
   padding: 30px;
 }
-
+/***
 .footer2::before {
   content: "";
   position: absolute;
@@ -729,7 +739,7 @@ body {
   top: 550px;
   background-color: #18B2DE;
   filter: blur(80px);
-}
+}***/
 
 
 @media screen and (max-width: 760px) {
@@ -804,16 +814,92 @@ body {
 /***Meet The Team Cards END***/
 #contact-title{
   font-size: 36px;
-  color: #FFFFFF; 
+  color: #FFFFFF;
+  margin: 24px 0 4px 0; 
+  text-align: center;
+}
+
+.footer{
+  border-top: 1px solid #F2F2F2;
+  padding-top: 40px;
+}
+
+#contact-section{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
 }
 
 #contact-section p{
+  width:90%;
   font-size: 18px;
   color: #FFFFFF;
-  line-height: 10px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 auto;
 }
 
+#contact-text{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 4%;
+  align-self: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  color: #E2E2E2;
+}
+#contact-paragraph-01{
+  color:greenyellow;
 
+  grid-column: 1;
+  grid-row: 1;
+}
+#contact-paragraph-02{
+  grid-column: 3;
+  grid-row: 1;
+  color: rgb(187, 224, 23);
+}
+/**
+#contact-paragraph-01 p {
+width: 100%;
+height: 100%;
+text-align: center;
+margin-bottom: 4%;
+align-self: center;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.5px;
+color: #E2E2E2;
+color: rgb(187, 224, 23);
+}**/
+
+#contact-map{
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#contact-us-map{
+  height: 100%;
+  max-width: 600px;
+  height: 350px;
+  border-radius: 20px;
+}
 
 /********Media Query Starts********/
   @media screen and (max-width: 1500px) {
