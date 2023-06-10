@@ -900,7 +900,11 @@ color: rgb(187, 224, 23);
   height: 350px;
   border-radius: 20px;
 }
-
+.dat{
+  width: 5px;
+  height: 5px;
+  padding: 10px;
+}
 /********Media Query Starts********/
   @media screen and (max-width: 1500px) {
     .landingpage {
