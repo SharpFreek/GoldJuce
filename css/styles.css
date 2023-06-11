@@ -343,6 +343,11 @@ body {
     justify-content: space-between;
   }
   
+  .nft a{
+    color: #D7D7D7;
+    text-decoration: none;
+  }
+
   .started {
     margin-top: 100px;
     display: flex;
@@ -743,30 +748,7 @@ body {
   width: 96%;
   max-width: 1200px;
   padding: 2%;
-
 }
-/***
-.footer2::before {
-  content: "";
-  position: absolute;
-  width: 123px;
-  height: 123px;
-  left: 60%;
-  top: 138px;
-  filter: blur(90px);
-  background-color: #FB37FF;
-}
-.footer2::after {
-  content: "";
-  position: absolute;
-  width: 123px;
-  height: 123px;
-  left: 80%;
-  top: 550px;
-  background-color: #18B2DE;
-  filter: blur(80px);
-}***/
-
 
 @media screen and (max-width: 760px) {
   .l-container {
@@ -883,7 +865,6 @@ body {
 }
 #contact-paragraph-01{
   color:greenyellow;
-
   grid-column: 1;
   grid-row: 1;
 }
@@ -1038,7 +1019,6 @@ body {
       grid-row: 1;
     }
   }
-
 
   @media screen and (max-width: 925px) {
     .navlinkwrap {
