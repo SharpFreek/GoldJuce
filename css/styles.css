@@ -623,7 +623,26 @@ body {
   align-content: center;
   padding-left: 4px;
 }
-
+#goldjuce-contract-address{
+  float: left;
+  display: grid;
+  max-width: 150px;
+  height: 35px;
+  font-size: 15px;
+  grid-template-columns: 30px auto ;
+  grid-template-rows: 40px;
+  border-radius: 25px;
+  margin: 0 auto;
+  color: #F2F2F2;
+  border:3px solid #f6ad02;
+  box-shadow: 0 0 5px #9B51E0;
+  background-color:#1F1D2B;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  overflow: hidden;
+  align-content: center;
+  padding-left: 4px;
+}
 #contract-address:hover{
   border:3px solid #9B51E0;
 }
@@ -631,7 +650,13 @@ body {
   border: 3px rgb(1, 233, 1);
   box-shadow: 1px 1px 10px #f6ad02;
 }
-
+#contract-coin{
+  width: 100%;
+  height: 100%;
+  color:white;
+  margin: 0 auto;
+  padding: 10px;
+}
 /**Contract Address END****/
 #copy{
   width: 100%;
@@ -831,7 +856,6 @@ body {
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-
 }
 
 #contact-section p{
