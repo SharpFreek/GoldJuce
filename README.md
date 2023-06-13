@@ -1,4 +1,4 @@
-# Juce
+# GoldJuce
 Juce Website &amp; Info
 
 ⭐PLEASE READ BELOW FOR INSTRUCTIONS⭐
