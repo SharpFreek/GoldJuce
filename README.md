@@ -29,7 +29,7 @@ Juce Website &amp; Info
 
 🗺️ Locations Folder Holds Individual GoldJuce Mine Claims Folders
 
-⛏️ Claim Folders is Inside "Location" Folder - Has All Individual Claims Seperated Into Folders
+⛏️ "Claims" are Inside "Mine" Folder - Has All Individual Claims Seperated Into Pages.
 
 💾 CSS Folder Holds Styling Sheets For Each Page
 
