@@ -3,7 +3,7 @@ Juce Website &amp; Info
 
 ⭐PLEASE READ BELOW FOR INSTRUCTIONS⭐
 
-👉🏽 Watch Site Live While Working https://geoffstengel.github.io/Juce/
+👉🏽 Watch Site Live While Working https://goldjuce.com/
 
 💡 Steps On How To Get Around Folders
 
