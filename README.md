@@ -48,4 +48,4 @@ Juce Website &amp; Info
     👬🏽 Domain Important - at Section 5 You'll Need These Numbers in Godaddy Manage DNS: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain
 🛎️
 
-💻 To Watch The Site Being Built 👉🏽 https://geoffstengel.github.io/Juce/
+💻 To Watch The Site Being Built 👉🏽 https://goldjuce.com
